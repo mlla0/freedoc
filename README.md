@@ -55,6 +55,7 @@ They are composed by the the following columns :
 
 ### All exercises
 
-* [1/3 blog](https://github.com/mlla0/freedoc "#")
+* [1/3 freedoc](https://github.com/mlla0/freedoc "#")
+* [2/3 dog_airbnb](https://github.com/mlla0/dog_airbnb "#")
 
 :kiss:
