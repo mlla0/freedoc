@@ -1,24 +1,60 @@
-# README
+# bdd & rails (thp week 4, day 4)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 1/3 - freedoc
 
-Things you may want to cover:
+## made in pair programming by Maud Lévy :fried_shrimp: & Antoine Vercoutère :poultry_leg:
 
-* Ruby version
+### How to use
 
-* System dependencies
+1. Git clone the repository to your computer
+2. In your terminal, run the `bundle install` command
+3. Run the `rails db:migrate` command
+3. Then, run the `rails db:seed` command
+4. You can now open your rails console by typing `rails console`
+5. To display the **doctors table**, type `tp Doctor.all` in the rails console. To display the **patients table**, type `tp Patient.all` in the rails console. To display the **appointments table**, type `tp Appointment.all` in the rails console. To display the **specialties table**, type `tp Specialty.all` in the rails console. To display the **cities table**, type `tp City.all` in the rails console. To display the **join_table_doctors_specialties table**, type `tp JoinTableDoctorsSpecialty.all` in the rails console.
 
-* Configuration
 
-* Database creation
+### Composition and information
 
-* Database initialization
+This app is composed of five tables : `doctors`, `patients`, `appointments`, `specialties`, `cities`, and `join_table_doctors_specialties`
 
-* How to run the test suite
+They are composed by the the following columns :
 
-* Services (job queues, cache servers, search engines, etc.)
+**TABLE : doctors**
+* id,
+* first_name,
+* last_name,
+* zip_code,
+* city_id,
 
-* Deployment instructions
+**TABLE : patients** 
+* id,
+* first_name,
+* last_name,
+* city_id
 
-* ...
+**TABLE : appointments** 
+* id,
+* doctor_id,
+* patient_id,
+* date,
+* city_id
+
+**TABLE : specialties** 
+* id,
+* name
+
+**TABLE : cities** 
+* id,
+* name
+
+**TABLE : join_table_doctors_specialties** 
+* id,
+* doctor_id,
+* specialty_id
+
+### All exercises
+
+* [1/3 blog](https://github.com/mlla0/freedoc "#")
+
+:kiss:
