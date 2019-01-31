@@ -12,6 +12,8 @@ Doctor.destroy_all
 Patient.destroy_all
 Appointment.destroy_all
 City.destroy_all
+Specialty.destroy_all
+JoinTableDoctorSpecialty.destroy_all
 
 
 5.times do |i|
